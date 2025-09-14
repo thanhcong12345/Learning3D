@@ -1,3 +1,3 @@
 # Learning3D
 
-# Practice1 : Assignmnet 1 + Converting
+# Practice1 : Assignment 1 + Converting
