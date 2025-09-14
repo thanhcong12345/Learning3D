@@ -11,7 +11,7 @@ from pytorch3d.renderer import (
 from PIL import Image
 
 
-# 4. Create renderer
+# Create renderer
 R, T = look_at_view_transform(3.0, 0, 0)
 cameras = FoVPerspectiveCameras(device="cpu", R=R, T=T)
 
