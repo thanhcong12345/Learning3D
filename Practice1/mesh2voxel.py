@@ -100,7 +100,7 @@ renderer = MeshRenderer(
 # 6. Render multiple views for GIF
 frames = []
 for angle in range(0, 360, 5):
-    R, T = look_at_view_transform(dist=5.0, elev=30, azim=angle)  # để xa ra cho fit con bò thật
+    R, T = look_at_view_transform(dist=5.0, elev=30, azim=angle)
     cameras = FoVPerspectiveCameras(R=R, T=T, device=device)
 
     image = renderer(voxel_mesh, cameras=cameras)
