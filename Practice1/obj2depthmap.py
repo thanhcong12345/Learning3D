@@ -37,7 +37,7 @@ def set_rasterizer(cameras, image_size=512):
 def render_depthmap(mesh, rasterizer):
     fragments = rasterizer(mesh)
     depth_map = fragments.zbuf[0, ..., 0].cpu().numpy()
-    depth_map[np.isinf(depth_map)] = 0  # loại bỏ background
+    depth_map[np.isinf(depth_map)] = 0  
     return depth_map
 
 
